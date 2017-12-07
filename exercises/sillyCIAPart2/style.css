@@ -1,0 +1,36 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h1, h2 {
+    font-family: Georgia;
+    text-align: center;
+}
+
+img {
+    float: left;
+    margin: 30px;
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    text-transform: uppercase;
+}
+

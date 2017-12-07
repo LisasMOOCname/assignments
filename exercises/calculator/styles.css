@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 255, 220);
+}
+
+h1 {
+    padding: 30px;
+    color: rgb(150, 150, 150);
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: inline-block;
+    width: 25%;
+    padding: 15px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#addition {
+    background-color: rgb(220, 220, 255);
+}
+
+#subtraction {
+    background-color: rgb(240, 200, 255);
+}
+
+#multiplication {
+    background-color: rgb(220, 255, 220);
+}
+
+input {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    margin: 30px;
+    background-color: rgb(220, 220, 180);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.output {
+         width: 100px;
+         height: 30px;
+         padding: 10px;
+         /*visibility: hidden; */
+         background-color: rgb(255, 255, 255);
+         font-family: Arial, sans-serif;
+         font-size: 14px;
+}
