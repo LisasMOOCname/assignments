@@ -11,6 +11,8 @@ header {
 
 h1 {
     text-align: center;
+	font-family: Castellar, serif;
+	font-size: 36px;
 }
 
 img {
@@ -21,6 +23,7 @@ img {
 p { 
     display: inline-block;
     width: 30%;
+	height: 210px;
     margin: 15px 10px;
 }
 

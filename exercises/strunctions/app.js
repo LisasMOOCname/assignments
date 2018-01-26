@@ -10,10 +10,11 @@ function makeOneString(str1, str2) {
 
 console.log(makeOneString("That's what I'm ", "talkin' 'bout!"));
 
-
+// This is the string from which we're getting the indices of the selected character.
 var str = "Check out this string!";
 
-function getIndices(input) {
+function getIndices(input) { 
+	// setting up an object to store the indices in so both can be returned
     var result = {
         firstIndex: "",
         lastIndex: ""
@@ -40,6 +41,13 @@ function replaceMyStr(inputA, inputB) {
 }
 
 console.log(replaceMyStr("V School", "Lesa"));
+
+function splitString(myStr) {
+	var strArray = myStr.split(" ");
+	return strArray;
+}
+
+console.log(splitString("Doin' the splits!!"));
 
 function changeString(str4) {
     var lowerCaseStr = str4.toLowerCase();

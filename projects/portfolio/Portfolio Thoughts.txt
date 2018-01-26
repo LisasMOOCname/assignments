@@ -1,0 +1,18 @@
+Portfolio Thoughts
+
+
+I have seen two portfolio ideas that I really like. 
+
+One has a gorgeous graphic as the page background, a Game of Thrones-type picture. To me, it says this is a guy who either wants to code fantasy games or does great graphic design of web pages/apps.
+
+The other was an interactive game of a resume, with Mario-like graphics. I love the idea of demonstrating game skills and engaging the viewer in reading through my resume/seeing my portfolio, maybe as an educational game (he's learning about me and what I can do).
+
+My portfolio should portray what I want to do, right in the design. I'm not a strong graphics person, though of course I want exciting graphics. I want to do educational software and medical simulations, so ideally, I'd like a portfolio that is a serious game or sim. A second (and admittedly easier) option would be to have some serious games/simulations on the resume, but I would still need to reflect my interests in the design.
+
+To be clear, I want to create apps, not websites. So if I do the second option – dang, I lost my train of thought, but anyway, the portfolio should highlight and reinforce what I want to do, in look, feel and content.
+
+============================================================
+
+I don't want to overwhelm or alienate people coming to the landing page by throwing them immediately into a game or sim, so my home page will be clear that it's my portfolio and resume. Probably it'll have an Enter link to open the game/sim/content.
+
+The game/sim should be engaging but quick to play, with information uncovered at every turn (or two). Maybe like Candyland, where players move square by square to hubs of delight. It should probably have options to be open-ended, so viewers can go right to contact info, skills summary, whatever. There should also be a section saying what technologies were used to created the portfolio and a credits page for any graphics.
