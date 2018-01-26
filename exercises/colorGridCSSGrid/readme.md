@@ -1,3 +1,4 @@
-01/05/2018
-This should be the final version, except that it isn't working on the Mac.
-Will retest and fix before uploading to GitHub.
+This was not assigned, but we did this color grid using vanilla CSS, then responsive versions
+with vanilla CSS and Bootstrap, so I wanted to do it using CSS Grid.
+
+Completed.

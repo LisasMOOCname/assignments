@@ -1,3 +1,6 @@
-01/05/2018
-Third and final attempt at creating the color grid using
-regular CSS.
+Assignment: Create the color grid using the specified colors.
+
+This version is the final attempt to get even spaces between the squares
+without resorting to faking it with white borders on the squares.
+
+Completed.

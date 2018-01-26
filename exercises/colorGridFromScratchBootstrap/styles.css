@@ -1,0 +1,14 @@
+/* Responsive color grid using Flexbox.
+At screen widths below 768px, each colored section
+should span the screen. At 768px and wider, the sections
+should be twice the height and with larger margins between them.
+--- top row: pink still spans the screen width
+--- second row: four equal fuchsia sections
+--- third row: two equal aqua sections
+--- fourth row: a green section on the left, 2/3 - 3/4 of the total width
+and a dark orange section on the right, 1/4 - 1/3 total width. */
+
+* {
+	box-sizing: border-box;
+	margin: 50px auto;
+}

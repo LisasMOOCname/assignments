@@ -41,12 +41,48 @@ Grid.prototype.displayGrid = function() {
     }
 }
 
-
     Grid.prototype.attack = function(x, y) {
-
+        let coord = this.grid[y][x];
+        coord.isHit = true;
+        if(coord.isShip) {
+            this.totalShips();
+            coord.display = "x";
+        }
+        else {
+            coord.display = "o";
+        }
     }
 
     let game = new Grid;
     game.genGrid();
     game.grid[3][2].display = "x";
     game.displayGrid();
+
+    let turnCounter = 20;
+    console.log("Welcome to Battleship!");
+    game.displayGrid();
+    while(true) {
+        let x = rs.keyIn("Choose an X coordinate between 0 and " + game.grid.length - 1);
+        let y = rs.keyIn("Choose a Y coordinate between 0 and " + game.grid.length - 1);
+        if (!validateCoord) {
+            console.log ("Invalid coordinate.");
+            continue;
+        }
+        if (validateAttack (x, y)) {
+            console.log("You already attacked that location.");
+        }
+    }
+
+    function validateCoord(x, y) {
+        x = Number(x);
+        y = Number(y);
+        if(x >= 0 && x < game.grid.length - 1 && y >= 0 && y < game.grid.length -1){
+            return true;
+        }
+    }
+
+    function validateAttack(x, y) {
+        x = Number(x);
+        y = Number(y);
+        return game.grid[y][x].isHit;
+    }

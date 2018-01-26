@@ -1,0 +1,47 @@
+body {
+
+    color: red;
+	font-family: "SuperMario256", "Comic Relief", sans-serif;
+}
+
+.container {
+	max-width: 900px;
+	text-align: center;
+}
+
+@font-face {
+    font-family: "SuperMario256";
+    src: url("SuperMario256.ttf");
+}
+
+.luigi-name {
+	background-color: rgb(255, 218, 9);
+}
+
+h1 {
+	text-align: left;
+	padding: 6px 50px 10px;
+	font-size: 48px;
+}
+
+.luigi-image {
+	padding: 15px;
+	background-color: rgb(235, 31, 34);
+}
+
+h2 {
+	font-size: 38px;
+}
+
+.blurb p {
+	font-family: sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+}	
+
+.footer {
+	padding: 4px 8px;
+	background-color: rgb(255, 218, 9);
+	text-align: right;
+}
+
