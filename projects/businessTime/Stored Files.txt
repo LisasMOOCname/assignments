@@ -1,0 +1,18 @@
+/*From Services. Just storing it here.
+
+.industry #left {
+    background-image: url("business.png");
+	width: 140px;
+}
+
+.industry #middle {
+    background-image: url("medicine.png");
+	width: 250px;
+	height: 150px;
+}
+
+.industry #right {
+    background-image: url("innovation.png");
+	width: 250px;
+	height: 150px;
+} */

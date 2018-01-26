@@ -1,0 +1,104 @@
+You are trapped in a room. The only way out is through the door, but it is locked. A key that will unlock the door is hidden somewhere in the room. Looking around the room, you can see:
+- the door
+- a green velour armchair
+- a side table next to the armchair
+- a small bookcase
+- a hole in one wall with a sign under it
+
+What do you want to do? You can: check inventory, check menu, examine, move, open, put, quit, read, scream, sit, take, or use things.
+
+Check menu: You can: check inventory, check menu, examine, move, open, put, quit, read, scream, sit, take, or use things.
+
+Inspect:
+just "examine" - What do you want to examine?
+armchair - You see a green velour armchair. 
+door - The door is closed and locked. It has a keyhole below the doorknob.
+table - The table has a small drawer in it and a lamp on it.
+lamp - The lamp is turned on. It provides the only light in the room.
+drawer - The drawer is closed. It has a small handle on it.
+bookcase - The bookcase holds several hardcover books from the mid-twentieth century. On the top is a framed photograph, a wire coat hanger, and a snow globe.
+hole - The hole in the wall is large enough to fit your hand in. There is a sign underneath it, but the print is too small to read. You think you see something golden glinting at the back of the hole.
+books - The book titles include The Seekers, Exodus, and Escape from Alcatraz.
+photo - The photograph shows a rather silly-looking brown-and-white dog.
+snow globe - Inside the snow globe is an island with a palm tree and hula dancers. Small colored beads in the sand spell out "Hawaii." The snowflakes are blue to match the water around the island.
+gum - There are three sticks of chewing gum and two empty wrappers in the package.
+hanger - The hanger is made of thin, easily bendable wire.
+
+
+Move:
+just "move" - What do you want to move?
+armchair - You find a package of chewing gum with most of the gum still in it.
+door - You can't move the door until you unlock it.
+table - Moving the table causes the lamp to fall and the light bulb to break. You are now stuck in the dark. You have five seconds to say your prayers before you are eaten by a Zorkian grue. Game over.
+lamp - Moving the lamp reveals nothing.
+drawer - You cannot move the drawer; you must open it.
+bookcase - Moving the bookcase results in several books falling out. The framed picture falls to the floor and the glass shatters, dooming you to seven years of bad luck. The hanger also falls. The snow globe falls, too, but miraculously does not break.
+hole - You cannot move the hole.
+books - Moving the books reveals nothing.
+photo - Turning the photo over, you see black felt backing and the frame stand.
+snow globe - Shaking the snow globe makes the blue "snowflakes" swirl around inside.
+
+Open:
+just "open" - What do you want to open?
+armchair - There is nothing to open on the armchair.
+door - You cannot open the door without the key.
+door with key - You did it! You escaped the room! A songbird chirps with delight, and your guardian angels are high-fiving one another. You may continue on your way. Have a nice day.
+drawer - Opening the drawer reveals a magnifying glass and a bottle of aspirin.
+table - You cannot open the table, except for the drawer.
+lamp - There is nothing to open on the lamp.
+bookcase - There is nothing to open on the bookcase.
+hole- The hole is already an open hole.
+books - You begin to read...
+photo - Removing the dog's photo from its frame, you see the name "Rover" lovingly written on the back.
+snow globe - The snow globe remains impervious to your efforts to pull it apart.
+gum - You remove a piece of gum from its wrapper.
+
+Put:
+hand in hole - You feel a shock and hear a sizzling sound. Pain travels up your arm, and your entire body is throttled by an electrical force. Oh, woe is you! Didn't you read the sign? Well, no matter now. You are no more. Game over.
+hanger in hole - The narrow end of the hanger fits into the hole, but you can't hook the glinting golden thing with it.
+hanger with gum in hole - The narrow end of the hanger fits into the hole, and the golden glinting thing sticks to it. When you pull it out, you see that it is... a key!!!!
+key in lock or door - You did it! You escaped the room! A songbird chirps with delight, and your guardian angels are high-fiving one another. You may continue on your way. Have a nice day.
+snowglobe, book, photo, hanger, magnifying glass, etc on something - You put the [item] on the [item].
+gum on hanger - The hanger now has a blob of gum on it.
+item on item - Why would you do that?(remove from inventory if puts an inventory item on a non-inventory item.
+
+Quit: Are you sure you want to quit? (Answer Yes or No.)
+If yes: "You are a quitter AND you're still stuck in that room. Good thing you have books to read. [break;]
+If no: "That's right, YOU'RE no quitter! What do you want to do?"
+
+Read:
+just "read" - What do you want to read?
+book - You read, "About four o' clock Abraham Kent woke from a fitful sleep and realized he couldn't rest again until the day's action was concluded..."
+sign - The print is too small for you to make out.
+sign with magnifying glass - With the magnifying glass you see the message, "Under pain of death, DO NOT put your hand in this hole!"
+everything else - There is nothing to read here.
+
+Scream:
+No one hears you scream.
+
+Sit:
+The armchair, though slightly tacky-looking, is quite comfortable.
+and anything but armchair or chair - Why would you do that?
+
+Take:
+just "take" - What do you want to take?
+book - You begin to read...
+photo - The dog in the photo seems to look at you soulfully.
+snow globe - Sure, yeah, take somebody's Hawaiian souvenir.
+magnifying glass - You take the magnifying glass.
+gum - (first time)You pick up the packet of chewing gum.
+gum - (later) You pop a piece of gum into your mouth. It has a clean, minty flavor. (Can take up to 3. Can reuse gum on hanger, if need be.)
+everything else - You cannot take that.
+aspirin - You take two aspirin and soon you feel better. (Can take up to four. The second time: You take the last two aspirin. The bottle is now empty. Further attempts: You're out of aspirin.) 
+hanger - You take the hanger.
+key - How are you going to take the key?
+key with hanger - The narrow end of the hanger fits into the hole, and the golden glinting thing sticks to it. When you pull it out, you see that it is... a key!!!!
+
+
+Use:
+just "use" - What do you want to use?
+armchair - The armchair, though slightly tacky-looking, is quite comfortable. 
+key - Where do you want to use the key? (must say "use key in door" or "use key in lock")
+gum - Where do you want to use the gum?
+magnifying glass - What do you want to use it with?
+No verb: What do you want to do with it?

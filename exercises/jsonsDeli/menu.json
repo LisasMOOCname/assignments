@@ -1,0 +1,87 @@
+{
+    "appetizers":[
+        {
+        "name": "fritters",
+        "ingredients": "broccoli, cauliflower, carrots, potatoes, onion curls, fritter batter, olive oil, seasonings",
+        "description": "fried veggies with a selection of dipping sauces"
+    },
+    {
+        "name": "hacked chicken",
+        "ingredients": "chicken, lo mein noodles, sesame-peanut sauce, cucumber, green onions",
+        "description": "tender pieces of boneless chicken sauteed with green onions and cucmber on a bed of noodles in a delicious sesame-peanut sauce"
+        }
+    ],
+    "cold sandwiches": [
+        {
+        "name": "roast beef",
+        "ingredients": "roast beef, lettuce, tomatoes and ketchup, kaiser roll",
+        "description": "freshly cooked roast beef with iceberg lettuce, sliced tomatoes and ketchup on a kaiser roll"
+    },
+    {
+        "name": "turkey",
+        "ingredients": "sliced turkey breast, your choice of cheese, romaine lettuce, herbed mayonnaise, bread",
+        "description": "succulent turkey and cheese  with lettuce and our house mayo on white, whole wheat or rye"
+    },
+    {
+        "name": "ham and Swiss on rye",
+        "ingredients": "boiled ham, aged domestic Swiss cheese, mayo, lettuce, rye bread",
+        "description": "the classic ham and Swiss on rye"
+    },
+    {
+        "name": "curried chicken salad",
+        "ingredients": "cubed chicken, hard-boiled eggs, raisins, shredded carrots, onions, mayon, curry powder, bread",
+        "description": "chicken salad in a mild curry sauce on your choice of bread"
+    }
+],
+    "hot sandwiches": [
+        {
+            "name": "French dip",
+            "ingredients": "roast beef, Swiss cheese, caramelized onions, pan drippings, French baguette",
+            "description": "Six inches of culinary paradise with dipping sauce"
+        },
+        {
+           "name": "pulled pork",
+           "ingredients": "shredded pork, honey barbecue sauce, bun",
+           "description": "sounds simple, but it tastes divine"
+        },
+    {
+        "name": "cheeseburger",
+        "ingredients": "ground sirloin, soy, cheddar cheese, lettuce, tomatoes, ketchup, mayo",
+        "description": "a classic cheeseburger, but baked, not grilled, for savory flavor"
+    }
+],
+    "desserts": [
+        {
+            "name": "layer cake",
+            "ingredients": "flour, sugar, baking powder, butter, chocolate, salt, milk",
+            "description": "yellow or chocolate cake with buttercream chocolate frosting"
+        },
+        {
+            "name": "brownie a la mode",
+            "ingredients": "flour, sugar, butter, baking powder, cocoa, chocolate chunks, milk",
+            "description": "a scoop of vanilla ice cream on a rich chocolate-chink brownie"
+        },
+        {
+            "name": "banana cream pie",
+            "ingredients": "flour, butter, sugar, bananas, vanilla, milk",
+            "description": "a Southern classic"
+        }
+    ],
+    "drinks":[
+        {
+            "name": "coffee",
+            "ingredients": "French roast or java, made with distilled water",
+            "description": "a hot cup of fresh joe with cream, milk and sugar as you desire"
+        },
+        {
+            "name": "sodapop",
+            "ingredients": "carbonated water, sugar, flavorings",
+            "description": "Your choice of Coke, Pepsi, Sprite, 7 Up, root beer, ginger ale, orange or grape"
+        },
+        {
+            "name": "citrus ade",
+            "ingredients": "orange, tangerine, lemon or lime juice, distilled water, can sugar",
+            "description": "a light, sweet drink made with fresh fruit"
+        }
+    ]
+}

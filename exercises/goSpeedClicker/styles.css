@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+}
+
+body { 
+	background-image: url("gasMaskBattle.jpg");
+	background-size: cover;
+	font-family: Monotype, sans-serif;
+}
+
+h2 {
+    padding-top: 40px;
+	padding-left: 20p;
+    text-align: center;
+	color: rgb(30, 30, 30);
+	font-style: italic;
+}
+
+#container {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+button {
+	display: inline block;
+	width: 80px;
+	height: 30px;
+	border: 2px solid rgb(74, 51, 19);
+	border-radius: 6px;
+	background-image: url("buttonBkgd.png");
+	font-weight: bold;
+}
+
+#timer {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	vertical-align: middle;
+	border: 3px solid rgb(74, 51, 19);
+	border-radius: 6px;
+	margin: 12px;
+	background-image: url("timerBkgd.png");
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+}
+
+p {
+	text-align: right;
+    position: absolute;
+    right: 25%;
+    bottom: 45px;
+    width: 50%;
+    font-weight: bold;
+}
+
+#counter {
+	display: inline-block;
+	text-align: center;
+    width: 70px;
+    height: 20px;
+	padding: 7px 0 3px;
+	border: 2px solid rgb(40, 40, 40);
+	border-radius: 6px;
+	margin: 0 5px;
+	background-image: url("counterBkgd.png");
+	color: rgb(254, 94, 39); 
+}

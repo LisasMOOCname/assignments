@@ -1,0 +1,18 @@
+header {
+    background-image: url("https://coursework.vschool.io/content/images/2017/12/home-bg.jpg");
+    background-size: cover;
+    z-index: -10; /*need to fix the overlay */
+    height: 400px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 38px;
+}

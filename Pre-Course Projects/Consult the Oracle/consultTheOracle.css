@@ -1,0 +1,31 @@
+/* JavaScript file for Lesa Becker's "Consult the Oracle"
+V School pre-course project. */
+
+body {
+      text-align: center;
+	  font-family: Papyrus, Arial, sans-serif;
+	  background-color: rgb(255, 130, 30);
+	  }
+	 
+h1 {
+	padding-top: 30px;
+    font-size: 38px;
+	color: rgb(128, 50, 0);
+    }
+		   
+#chooser {
+		  padding-top: 20px;
+		 }
+		   	
+#output {
+         width: 260px;
+	     height: 130px;
+	     padding: 25px 20px 10px;
+	     border: 3px solid rgb(128, 50, 0);
+	     border-radius: 5px;
+         margin: 35px auto;
+	     background-color: rgb(255, 241, 193);
+	     color: rgb(120, 39, 30);
+	     font-size: 22px;
+	     font-weight: bold;
+        }

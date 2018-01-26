@@ -1,0 +1,78 @@
+/* This is the best I can do without using the white borders to fake margins, 
+but I had to fudge the top bar's width to get it to match the others, when 
+they should right-align with the right edge of the top bar at 100% width.
+I still feel no proficiency with the CSS - it's still a lot of trial
+and error. */
+   
+.row1 {
+    background-color: #F5C6D6;
+	}
+	
+.row2 {
+    background-color: #EE2E84;
+	}
+	
+.row3 {
+    background-color: #85CFD8;
+	}
+	
+.row4Left {
+    background-color: #8DC63F;
+	}
+	
+.row4Right {
+    background-color: #E76E34;
+	}
+
+@media (min-width: 768px) { 
+* {
+   box-sizing: border-box;
+   font-size: 0;
+   }
+   
+.container {
+	position: relative;
+	top: 100px;
+	min-width: 768px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.bar {
+	display: inline-block;
+	height: 120px;
+	margin: 6px 5px;
+}
+
+.right{
+	margin-right: 0;
+}
+   
+.row1 {
+	width: 98.75%;
+	}
+	
+.row2 {
+	width: 23.75%;
+	}
+	
+.row3 {
+	width: 48.75%;
+	}
+	
+.row4Left {
+	width: 68.5%;
+	}
+	
+.row4Right {
+	width: 29%;
+	}
+}
+
+@media (max-width: 767px) {   
+.bar {
+	width: 100vw;
+	height: 60px;
+	margin-bottom: 6px;
+}
+}

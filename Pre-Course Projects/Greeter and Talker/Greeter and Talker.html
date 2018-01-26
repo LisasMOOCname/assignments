@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <style>
+body {
+     text-align: center;
+	 font-family: Verdana;
+	 background-color: rgb(250, 105, 200);
+	 color: rgb(250, 230, 180);
+	 }
+	 
+section { 
+         padding: 20px;
+		 }
+	 
+h1 {
+    padding-bottom: 15px;
+	border-bottom: 3px solid rgb(150, 50, 110);
+	
+	font-size: 38px;
+	color: rgb(150, 50, 110);
+   }
+   
+input {
+       width: 150px;
+	   height: 30px;
+	   padding-left: 10px;
+	   border: 2px solid rgb(230, 85, 180);
+	   margin-right: 15px;
+	   color: rgb(150, 50, 110);
+	   font-size: 14px;
+	   font-weight: bold;
+      }
+	  
+button {
+        width: 80px;
+		height: 35px;
+		border: 2px solid rgb(230, 85, 180);
+		border-radius: 2px;
+		background-color: pink;
+		color: rgb(150, 50, 110);
+		font-weight: bold;
+       }
+   
+ div {
+      width: 250px;
+	  height: 50px;
+	  padding: 25px 20px 10px;
+	  border: 5px solid rgb(230, 85, 180);
+	  border-radius: 12px;
+      margin: 35px auto;
+	  background-color: white;
+	  color: rgb(150, 50, 110);
+	  font-size: 22px;
+	  font-weight: bold;
+     }
+   
+
+ </style>
+ </head>
+ 
+ <body>
+
+ <h1>V School Project</h1>
+ 
+ <section>
+ <h2>Hi! What's your name?</h2>
+ <input type="text" id = "name" name="name" />
+ <button id="btn" type="submit">Enter</button>
+ <div id="hiUser"></div>
+</section>
+
+<script>
+function greetUser(name) {
+    var userName = document.getElementById("name").value;
+	document.getElementById("hiUser").innerHTML = "Hi, " + userName + "!";
+	}
+
+document.getElementById("btn").addEventListener("click", greetUser);
+</script>
+ </body>
+ </html>
+ 
+ 
+ 

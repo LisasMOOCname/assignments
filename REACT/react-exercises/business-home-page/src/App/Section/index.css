@@ -1,0 +1,23 @@
+section {
+    margin: 0;
+    background-color: rgb(255, 255, 170);
+}
+
+img {
+    width: 350px;
+    margin: 20px;
+}
+
+h3 {
+    font-family: Arial;
+    color: brown;
+}
+
+.sectionP {
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial;
+    font-size: 18px;
+    color: brown;
+}

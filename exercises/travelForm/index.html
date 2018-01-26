@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <h1>Travel Information</h1>
+</header>
+
+    <form id="travelForm"> 
+        <div>
+            <label>Name<br />
+                <input type="text" name="firstName" placeholder="first name" required/><br />
+                <input type="text" name="lastName" placeholder="last name" required/>
+            </label>
+        </div>
+
+        <div>
+            <label>Age<br />
+                <input type="number" name="age" placeholder="age" required/>
+            </label>
+        </div>
+        <div>
+            <label>Gender<br />
+                <input type="radio" name="gender" value="female" required/>Female<br />
+                <input type="radio" name="gender" value="male" required/>Male
+            </label>
+        </div>
+
+        <div>
+        <label class="destination">Destination </label><select id="destination" name="destination" required>
+            <option name="Birmingham" value="Birmingham">Birmingham, AL</option>
+            <option name="Manchester" value="Manchester">Manchester, NH</option>
+            <option name="Philadelphia" value="Philadelphia">Philadelphia, PA</option>
+            <option name="Laramie" value="Laramie">Laramie, Wyoming</option>
+        </select>
+        </div>
+        <div>
+        <label>Dietary Restrictions</label>
+        <label><input class="checkbox" type="checkbox" name="restriction" value="none" />None</label>
+        <label><input class="checkbox" type="checkbox" name="restriction" value="heart healthy" />Heart Healthy</label>
+        <label><input class="checkbox" type="checkbox" name="restriction" value="lactose-free" />Low-Calorie</label>
+        <label><input class="checkbox" type="checkbox" name="restriction" value="kosher" />Kosher</label>
+        <label><input class="checkbox" type="checkbox" name="restriction" value="vegan" />Vegan</label>
+        <label><input class="checkbox" type="checkbox" name="restriction" value="vegetarian" />Vegetarian</label>
+        </div>
+         <button id="btn">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+footer {
+    padding: 20px;
+    border-top: 1px solid rgb(200, 200, 200);
+    text-align: center;
+}
+
+.copyright {
+    color: rgb(175, 175, 175);
+}

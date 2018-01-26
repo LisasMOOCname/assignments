@@ -9,13 +9,15 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
-div {
+.calculator {
     display: inline-block;
-    width: 25%;
+    width: 280px;
+	height: 100%;
     padding: 15px;
     border: 1px solid rgb(150, 150, 150);
     border-radius: 10px;
-    margin: 10px;
+    margin: 0 25px 20px;
+	overflow: hidden; /* Prevents calculators from moving downward when one displays output. */
 }
 
 #addition {
@@ -55,7 +57,9 @@ button {
          width: 100px;
          height: 30px;
          padding: 10px;
-         /*visibility: hidden; */
+         border: 1px solid rgb(150, 150, 150);
+         border-radius: 10px;
+		 margin: 5px auto;
          background-color: rgb(255, 255, 255);
          font-family: Arial, sans-serif;
          font-size: 14px;

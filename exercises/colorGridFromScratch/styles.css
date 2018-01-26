@@ -1,27 +1,74 @@
-body {
-    max-width: 700px;
-    margin: 0 auto;
+/* Uses white border for consistent widths between panels. */
+
+* {
     box-sizing: border-box;
+	font-size: 0;
+}
+
+body { 
+      height: 100vh;
+}
+
+#holder {
+         position: relative;
+		 top:47%;
+		 transform: translateY (-50%);
+		 width: 60%;
+		 height: 75vh;
+		 margin: auto;
 }
 
 .row {
-    margin: 10px 15px;
-    width: 100px;
-    height: 50px;
+    height: 25%;
 }
 
-#row1 {
-    color: pink;
+.rowA {
+    width: 100%;
+    height: 100%;
+	border: 6px solid white;
+    background-color: #F5C6D6;
 }
 
-#row2 {
-    color: magenta;
+.rowB {
+	display: inline-block;
+    width: 25%;
+    height: 100%; 
+	border: 6px solid white;
+	margin: auto;
+    background-color: #EE2E84;
 }
 
-#row3 {
-    color: blue;
+.rowC {
+	display: inline-block;
+    width: 50%;
+    height: 100%; 
+	border: 6px solid white;
+	margin: auto;
+    background-color: #85CFD8;
 }
 
-#row4 {
-    color: green;
+#green {
+	display: inline-block;
+    width: 70%;
+    height: 100%; 
+	border: 6px solid white;
+	margin: auto;
+	background-color: #8DC63F;
 }
+
+#orange {
+	display: inline-block;
+    width: 30%;
+    height: 100%; 
+	border: 6px solid white;
+	margin: auto;
+	background-color:#E76E34;
+}
+
+/* The class did each box as a colummn class:
+.col {
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+    border: white solid 6px;
+} */

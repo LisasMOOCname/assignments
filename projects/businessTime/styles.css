@@ -1,0 +1,246 @@
+/* Overall website styling */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+	font-family: Candara, Verdana, sans-serif;
+}
+
+header {
+	background-color: rgb(242, 242, 242);
+	}
+
+#logo {
+   display: inline-block;
+   width: 40%;
+   }
+   
+.headerNav { 
+   display: inline-block;
+   float: right;
+   text-align: right;
+}
+
+.headerNavList {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-right: 3em;
+    list-style-type: none;
+}
+
+footer {
+		padding: 20px;
+		border-top: 1px solid rgb(100, 100, 100);
+		background-color: rgb(220, 220,220);
+		color: rgb(100, 100, 100);
+		}
+		
+#footerDivContainer {
+	width: 90%;
+	margin: auto;
+}
+
+#leftFooterDiv {
+			    display: inline-block;
+			    width: 40%;
+               }
+	
+#centerFooterDiv {
+			      display: inline-block;
+			      width: 30%;
+                 }
+		  
+#rightFooterDiv {
+				 display: inline-block;
+				 position: absolute;
+				 right: 0;
+			     width: 25%;			 
+                }
+							
+li {
+		list-style-type: none;
+}
+				
+.footerLink {
+	text-decoration: none;
+	
+}
+				
+.home, .services, .about, .careers {
+	                                opacity: 0.6;
+	                                cursor: not-allowed;
+                                   }
+								 
+#copyright {
+            text-align: center;
+}
+
+/*Home Page*/
+
+/* This disappears when I put the <a> styling above it. */
+#businessPhoto {
+	height: 500px;
+	border-bottom: 2px solid rgb(50, 50, 50);
+	margin: 0;
+	background-image: url("meeting.png");
+	background-size: cover;
+           }
+
+a:link {
+	    text-decoration: none;
+   color: rgb(50, 116, 175);
+}
+ 
+a:visited {
+	    text-decoration: none;
+        color: rgb(169, 27, 99);
+}
+
+#footerLink a:visited {
+	    text-decoration: none;
+   color: rgb(100, 100, 100);
+}
+
+a:hover {
+	    text-decoration: none;
+   color: rgb(85, 155, 42);
+}
+
+a:active {
+	    text-decoration: none;
+   color: rgb(255, 165, 0);
+}
+
+h2 {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	color: white;
+	font-size: 60px;
+}
+
+/* Services Page */
+
+#areasOfExpertise {
+	height: 400px;
+	background-color: rgb(255, 255, 255);
+}
+
+#expertise {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.industry {
+			display: flex;
+			flex-direction: column; 
+			width: 250px;
+	         height: 300px;
+			 padding: 15px;
+			 border: 1px solid black;
+			 margin:20px;
+			 overflow: hidden;
+			 justify-content: flex-end;
+			 align-items: center;
+
+}	
+
+.industry p {
+}
+	
+
+#left {
+    background-image: url("business.png");
+	background-repeat: no-repeat;
+	width: 250px;
+}
+
+#middle {
+    background-image: url("healthcare.png");
+	background-repeat: no-repeat;	
+	width: 250px;
+}
+
+#right {
+    background-image: url("innovation.png");
+	background-repeat: no-repeat;
+	width: 250px;
+}
+
+/* Careers Page */
+
+.main {
+	display: flex;
+}
+
+.narrowMain {
+	width: 23%;
+	padding: 25px;
+	border-right: 2px solid gray;
+	margin: 0;
+}
+
+h4, .careersNav {
+	margin: 4px;
+}
+
+.wideMain {
+	width: 75%;
+	padding: 25px;
+	border-left: 2px solid gray;
+	margin: 0;
+}
+
+form div {
+	display: block;
+	padding: 8px;
+}
+
+input {
+	padding: 3px;
+	margin: 5px;
+}
+
+.blurb {
+	width: 70%;
+	margin: 40px auto;
+}
+
+.blurb p {
+	padding: 10px;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: rgb(100,100,100);
+}
+
+#values p {
+	text-indent: 30px;
+}
+
+#values span {
+     color: rgb(0, 0, 0);
+}
+
+.employee {
+	height: 220px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.companyTeam {
+	float: left;
+	width: 150px;
+	border: 1px solid rgb(170, 170, 170);
+	margin: 16px;
+}
+
+span {
+	font-weight: bold;
+}		 
+		   
+			

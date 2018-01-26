@@ -1,0 +1,67 @@
+ICSS Positioning At-a-Glance
+
+
+Box-sizing
+
+This affects positioning because it affects the size of the element's box. In the default state, width and height describe only the content, and margin exists outside the box. With the box-sizing property set to border-box, width and height describe the entire box size, including the margin.
+
+Margin takes the largest top/bottom of two elements (or the top and ignores the bottom – sources differ and I get varying results); horizontally, two adjacent margins are added. MDN says the margins of absolutely positioned elements don't collapse (take the larger of the two numbers) and margins of adjacent siblings do.
+
+vw and vh
+
+view width and view height, expressed as percentages, specify how much of the viewable screen an element takes up, e.g. 100vh
+
+
+CSS position types:
+static - the default
+fixed - stays in place when the page scrolls, e.g. a header, banner ad, pop-up or footer; is positioned relative to the viewport (the part of the page that shows on the screen). Uses top, right, bottom and left to set position. Does not leave a gap at its normal page. Use width to size it.
+relative
+absolute
+sticky - position is based on the user's scroll position; stays visible when page scrolls; toggles from relative to fixed when scrolling reaches a specified offset. Must give at least one of top, right, bottom or left.e.g.top:0; makes it stick to the top of the page.
+
+z-index - specifies the stack order of positioned elements, as these can overlap one another
+
+Centering Items on the Page
+
+text-align: center – horizontally centers text and block-level items
+
+vertical-align - aligns the baseline of an element with the baseline of its parent (default state). Can use length to raise/lower the element. % raises/lowers it as a percent of line height.sub/super make it a subscript/superscript. top aligns the top of the element with the top of the tallest element on the line. middle aligns it with the middle of its parent element. inherit lets it inherit the value from its parent.
+
+margin: 0 auto - centers a block-level element by putting equal margins on its left and right sides (or all sides specified as auto) between the element and its containing div. Must specify element's width to use this.
+
+position: relative – used along with top, right, bottom and/or left, offsets an element a specified number of pixels or a specified percentage from its normal position (not relative to a parent or ancestor element). Subsequent elements position themselves based on this element's normal position, not its adjusted relative position, e.g. a <p> just below an <h3> normally ends up above it when the <h3> has position: relative; and top:60px;. Syntax:
+
+position: relative;
+top: 40px; // below its normal position
+left: 100px; // rightward from its normal position
+
+or 
+
+position: relative;
+right: 25% // of parent's [??] width, leftward from the right edge
+
+position: absolute – relative to the nearest positioned (non-static) ancestor element. If there is no positioned ancestor, it scrolls with the page body. 
+
+Doesn't bump things out of the way. 
+
+Good for centering an element relative to others, especiallysp. using the transform property. First give the ancestor width and height – can be of the entire page, e.g. 
+
+ancestor {
+                width: 100vw;
+                height: 100vh;
+}
+
+element {
+               position: absolute;
+               top: 50% // moves the top of the element halfway down the parent, not the middle of it.
+              }
+
+To adjust the element's position relative to its current location (regardless of its parent or ancestor) – here, to make its center be halfway down the parent –  use the transform property. 
+
+transform: translateY(-50%); moves 50% of element up vertically
+transform: translateX(-50%); moves 50% of element to the right
+
+Can do both on one line: transform: translateY(-50%) translate(-50%);
+
+
+float - causes subsequent elements to wrap around the floated element, e.g. img { float: left; } makes text wrap to its right.

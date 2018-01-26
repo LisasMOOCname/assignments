@@ -1,0 +1,9 @@
+footer {
+    height: 140px;
+    background-color: purple;
+}
+
+.footerP {
+    text-align: center;
+    color: yellow;
+}

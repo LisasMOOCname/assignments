@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.2.1.js"></script>
+    <style>
+        body {
+              text-align: center;
+	          font-family: Papyrus, Arial, san-serif;
+	          background-color: rgb(255, 130, 30);
+	         }
+	 
+        h1 {
+	        padding-top: 30px;
+			font-size: 38px;
+			color: rgb(128, 50, 0);
+           }
+		   
+		#chooser {
+		          padding-top: 20px;
+				  }
+		   
+		select {
+		        width: 120px;
+				height: 30px;
+				padding-left: 8px;
+				border: 2px solid rgb(128, 50, 0);
+				border-radius: 3px;
+				background-color: rgb(255, 241, 193);
+				color: rgb(128, 50, 0);
+				font-family: Tahoma, Arial, sans-serif;
+				font-weight: bold;
+				font-size: 14px;
+				}
+		
+		#output {
+             width: 260px;
+	         height: 130px;
+	         padding: 25px 20px 10px;
+	         border: 3px solid rgb(128, 50, 0);
+	         border-radius: 5px;
+             margin: 35px auto;
+	         background-color: rgb(255, 241, 193);
+	         color: rgb(120, 39, 30);
+	         font-size: 22px;
+	         font-weight: bold;
+            }
+    </style>
+</head>
+ 
+<body>
+
+    <h1>Consult the Oracle</h1>
+ 
+    <p>Please select the nature of your inquiry, and the Oracle will tell you what the future holds.</p>
+	<form id="chooser">
+        <input type="radio"	id="health" value="health" name="inquiry" />Health
+        <input type="radio" id="family" value="family" name="inquiry" />Family	
+        <input type="radio" id="journey" value="journey" name="inquiry" />Journey<br />
+		<input type="radio" id="love" value="love" name="inquiry" />Love
+		<input type="radio" id="money" value="money" name="inquiry" />Money
+	    <input type="radio" id="spirit" value="spirit" name="inquiry" />Spirit
+	</form>
+
+	<div id="output"></div>
+	
+<script>
+// Gets the selected radio button.					
+function getInquiry(inquiry) {
+    var topic = "";
+    if (document.getElementById("health").checked) {
+		                                            topic = "health";
+			                                       }
+    else if (document.getElementById("family").checked) {
+						                                 topic = "family";
+					                                    }
+    else if (document.getElementById("journey").checked) {
+                                                          topic = "a journey";
+	                                                     }
+    else if (document.getElementById("love").checked) {
+						                                 topic = "love";
+					                                    }
+    else if (document.getElementById("money").checked) {
+                                                          topic = "money";
+	                                                     }
+	else { 
+	      topic = "spirit";
+		  }
+	return topic;
+	}
+	
+// Displays three announcements, one at a time.
+(function welcome() {
+  			        document.getElementById("output").innerHTML = "Welcome, Seeker";
+		            })();
+
+function foretell(topic) {
+                          var subject = getInquiry(topic);
+						  var foretellings = [
+							"Fortune is smiling upon you.", 
+							"proceed with caution.", 
+							"you must look within yourself.", 
+							"your Fate is entwined with a compelling stranger.", 
+							"you must quest for fulfillment. ", 
+							"the waters of foretelling are murky and show nothing."
+						  ];
+ 					      var oracleAnswer = Math.floor(Math.random() * foretellings.length);
+						  document.getElementById("output").innerHTML = "In this matter of " + subject + ", " + foretellings[oracleAnswer];
+					     }	
+
+/*Non-working function. This is what I *want* to do.						 
+function allowThreeRequests(){
+                   do var count = 0;
+				   while(count < 3){
+				        //I want the event listener to go here, but it won't work inside the loop.
+				        console.log(count);	
+				        count++;
+				   }
+				   if(count === 3){
+				                   document.getElementById("output").innerHTML = "You have made three requests. The Oracle will reveal no more.";
+						          }
+                  }	*/	
+
+function attendantGrumblings() {
+    var grumbles = [
+	                "The seeker's offering could be better.",
+					"The seeker didn't stop at the ritual bath on the way.",
+					"My feet hurt."
+					];
+    for(let i = 0; i < 3; i++) {
+                                console.log(grumbles[i]);
+                               }	
+							  }
+							  
+setTimeout(attendantGrumblings, 3000);
+document.getElementById("chooser").addEventListener("change", foretell);
+</script>
+</body>
+ </html>
+ 
+ 
+ 

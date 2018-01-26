@@ -1,0 +1,43 @@
+/* Assignment is to re-create the home page of csszengarden.com */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Libre Baskerville", serif;
+}
+
+header {
+	text-align: center;
+	background-image: url("huntington.jpg");
+	background-size: cover;
+	color: rgb(255, 255, 255);
+}
+
+.title {
+	padding: 50px;
+}
+
+h3 {
+	color: rgb(156, 181, 157);
+	font-style: italic;
+}
+
+section {
+	padding: 50px;
+}
+
+.content2 {
+	    background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	background-image: url("koi.jpg");
+	color: rgb(130, 155, 150);
+	font-style: italic;
+}
+
+a .footerLink {
+	color: rgb(200, 209, 208);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <style>
+body {
+     text-align: center;
+	 font-family: Verdana;
+	 background-image: url("Mountainside.jpg");
+	 background-size: cover;
+	 color: rgb(250, 230, 180);
+	 }
+	 
+section { 
+         height: 500px;
+		 padding: 20px;
+		 }
+	 
+header {
+        padding-bottom: 15px;
+	    border-bottom: 3px solid rgb(40, 40, 40);
+	   }
+	
+h1 {
+	font-family: Castellar, serif;
+	font-size: 48px;
+	color: rgb(40, 40, 40);
+   }
+   
+input {
+       width: 150px;
+	   height: 30px;
+	   padding-left: 10px;
+	   border: 2px solid rgb(230, 85, 180);
+	   margin-right: 15px;
+	   color: rgb(150, 50, 110);
+	   font-size: 14px;
+	   font-weight: bold;
+      }
+	  
+button {
+        width: 100px;
+		height: 25px;
+		border: 2px solid rgb(100, 100, 100);
+		border-radius: 2px;
+		margin-top: 15px;
+		background-color: rgb(160, 160, 160);
+		color: rgb(70, 51, 48);
+		font-weight: bold;
+       }
+	   
+#left {
+       float: left;
+	   width: 220px;
+	   height: 250px;
+	   padding: 8px 10px 12px 20px;
+	   border: 2px solid rgb(40, 40, 40);
+	   margin: 30px 0 20px 70px;
+	   background-color: rgb(160, 160, 160);
+	   color: rgb(70, 51, 48);
+	   text-align: left;
+      }
+	  
+#right {
+       visibility: hidden;
+	   float: right;
+	   width: 220px;
+	   height: 250px;
+	   padding: 8px 10px 12px 20px;
+	   border: 2px solid rgb(40, 40, 40);
+	   margin: 30px 0 20px 70px;
+	   background-color: rgb(255, 255, 187);
+	   color: rgb(70, 51, 48);
+	   text-align: left;
+      }
+   
+div {
+     display: inline-block;
+	 margin: 6px 30px;
+	 }
+	 
+.clues {
+       width: 135px;
+	   }
+   
+img {
+     border: 1px solid rgb(100, 100, 100);
+    }
+
+ </style>
+ </head>
+ 
+ <body>
+<header>
+ <h1>V School Project</h1>
+ </header>
+ <section>
+ <aside id="left">
+ <p>
+ Only one of these doors bears a true message.<br /><br />
+ Only one way lies treasure.<br /><br />
+ The others will lead you to your doom!<br /><br />
+ Enter at your peril.
+ </p>
+ </aside>
+ 
+ <div class="doors" id="door1" alt="Door #1">
+ <p class="clues">This door leads to treasure.</p><br />
+ <img src="Door 1.png" /><br />
+   <button class="buttons" id="button1" name="button1" value = 1>Door #1</button>
+ </div>
+ 
+  <div class="doors" id="door2" alt="Door #2">
+   <p class="clues">No treasure here.</p><br />
+  <img src="Door 2.png" /><br />
+  <button class="buttons" id="button2" name="button2" value = 2>Door #2</button>
+ </div>
+ 
+  <div class="doors" id="door3" alt="Door #3">
+   <p class="clues">Door #1 does not lead to treasure.</p><br />
+  <img src="Door 3.png" /><br />
+    <button class="buttons" id="button3" name="button3" value = 3>Door #3</button>
+ </div>
+ 
+ <aside id="right">
+ <p></p>
+ </aside>
+
+</section>
+
+<script>
+function checkChoice(x) {
+	var choice = x.target.name;
+	if (choice === "button1") {
+		console.log("Door1");
+		}
+	else if (choice === "button2") {
+		console.log("Door 2");
+		}
+	else {
+		console.log("Door 3");
+		}
+	document.getElementById("right").style.visibility = "visible";
+	document.getElementById("right").innerHTML = "Placeholder" + choice;
+}
+
+document.getElementById("button1").addEventListener("click", checkChoice);
+document.getElementById("button2").addEventListener("click", checkChoice);
+document.getElementById("button3").addEventListener("click", checkChoice);
+</script>
+ </body>
+ </html>
+ 
+ 
+ 

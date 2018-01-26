@@ -1,0 +1,51 @@
+// App/Div/index.js
+
++import React, { Component } from "react";
+ +
+ +function Div(props) {
+ +    return (
+ +        <div className={props.className}>
+ +            {props.text}
+ +        </div>
+ +    )
+ +}
+ +
+ +export default Div;
+
+ // App/index.css
+
+ +.red{
+ +    background-color: red;
+ +}
+ +.blue{
+ +    background-color: blue;
+ +}
+ +.yellow{
+ +    background-color: yellow;
+ +} 
+
+ // App/index.js
+  import React, { Component } from "react";
+  import Nav from "./Nav";
+ +import Div from "./Div";
+ +import "./index.css"
+  
+  function App(props) {
+      let links = [{
+ @@ -20,11 +22,9 @@ function App(props) {
+                  parentStyle={{ backgroundColor: "yellow" }}
+                  childStyle={{ color: "fuchsia" }}>
+              </Nav>
+ -            <Nav
+ -                links={links}
+ -                parentStyle={{ backgroundColor: "blue" }}
+ -                childStyle={{ color: "yellow" }}>
+ -            </Nav>
+ +            <Div className="red" text="lorem ipsum"></Div>
+ +            <Div className="blue" text="lorem ipsum"></Div>
+ +            <Div className="yellow" text="lorem ipsum"></Div>
+          </div>
+      )
+  }
+
+// 

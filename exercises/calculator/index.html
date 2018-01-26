@@ -10,26 +10,30 @@
 
 <body>
     <h1>Simple HTML Calculator</h1>
-    <div id = "addition">
+	<div id="container">
+    <div class="calculator" id = "addition">
         <input id="num1Add" placeholder="first number">
         <input id="num2Add" placeholder="second number">
         <button id="addBtn">Add</button>
         <div class="output" id="additionOutput"></div>
     </div>
 
-    <div id="subtraction">
+    <div class="calculator" id="subtraction">
         <input id="num1Subtract" placeholder="first number">
         <input id="num2Subtract" placeholder="second number">
         <button id="subtractBtn">Subtract</button>
         <div class="output" id="subtractionOutput"></div>
     </div>
 
-    <div id="multiplication">
+    <div class="calculator" id="multiplication">
+	    <div>
         <input id="num1Multiply" placeholder="first number">
         <input id="num2Multiply" placeholder="second number">
-        <button id="multiplyBtn">Multiply</button>
+		</div>
+		<div><button id="multiplyBtn">Multiply</button></div>
         <div class="output" id="multiplicationOutput"></div>
     </div>
+	</div>
     <script src="app.js"></script>
 </body>
 </html>

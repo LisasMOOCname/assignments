@@ -1,0 +1,71 @@
+* {
+	margin: 0 auto 0;
+}
+
+body {
+	  text-align: center;
+	  font-family: "Open Sans", Arial;
+	  } 
+	  
+header {
+        height: 120px;
+		border-bottom: 6px solid rgb(25, 137, 212);
+		background-image: url("marioBanner.png");
+		}
+		
+h1 {
+	position: relative;
+	top: 25px;
+	font-size: 56px;
+    font-family: "Alegreya", Arial;
+	font-weight: 900;
+	font-style: italic;
+	color: rgb(255, 32, 38);
+	text-shadow: 3px 3px rgb(0, 0, 0);
+	}
+	
+section {
+	     height: 68vh;
+}
+
+ul {
+	list-style: none;
+}
+	
+li {
+    display: inline-block;
+    width: 30%;
+    padding: 35px 15px;
+	}
+	
+h4 {
+	margin-bottom: 20px;
+}
+
+h5 {
+	margin-bottom: 10px;
+}
+
+output {
+	padding-left: 5px;
+	color: red;
+}
+	 
+footer {
+	    position: relative;
+		bottom: 0;
+		height: 80px;
+        padding: 15px;	
+		border-top: 6px solid rgb(255, 32, 38);
+		background-color: rgb(23, 27, 64);
+		color: rgb(189, 136, 1);
+		font-family: "Comic Relief", Arial;
+        font-size: 12px;
+		font-weight: bold;
+		}
+		
+footer a {
+          text-decoration: none;
+		  color: rgb(254, 192, 0);
+		  }
+               
