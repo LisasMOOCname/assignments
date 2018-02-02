@@ -1,12 +1,14 @@
-import React, {Component} from "react";
+import React from "react";
+import Friend from "./Friend";
+import "./index.css";
 
-
+function Friendlist(props) {
 let friends = [
     {
         name: "Jeff",
         age: 32,
         pets: [{
-            name: "Hershey",
+            petName: "Hershey",
             breed: "calico cat"
         }]
     },
@@ -15,23 +17,19 @@ let friends = [
         age: 41,
         pets: [
             {
-                name: "Alegre",
+                petName: "Alegre",
                 breed: "German shepherd"
             },
             {
-                name: "Cookie",
+                petName: "Cookie",
                 breed: "shih tzu"
             },
             {
-                name: "Tux",
+                petName: "Tux",
                 breed: "calico cat"
             },
             {
-                name: "Billy",
-                breed: "tabby cat"
-            },
-            {
-                name: "Belle",
+                petName: "Belle",
                 breed: "tabby cat"
             }]
     },
@@ -40,19 +38,19 @@ let friends = [
         age: 20,
         pets: [
             {
-                name: "Sadie",
+                petName: "Sadie",
                 breed: "poodle"
             },
             {
-                name: "Carmen",
+                petName: "Carmen",
                 breed: "Persian cat"
             },
             {
-                name: "Duncan",
+                petName: "Duncan",
                 breed: "guinea pig"
             },
             {
-                name: "Cecily",
+                petName: "Cecily",
                 breed: "hamster"
             }
         ]
@@ -62,9 +60,24 @@ let friends = [
         age: 27,
         pets: [
             {
-                name: "Eric",
+                petName: "Eric",
                 breed: "fish"
             }
         ]
     }
-];
+]
+    return (
+        <div className="listParent">
+            <div className="list">
+                <h1>Friends with Pets</h1>
+                <ul>
+                    {friends.map((info) => {
+                        return <Friend {...info} />
+                    })}
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+export default Friendlist;

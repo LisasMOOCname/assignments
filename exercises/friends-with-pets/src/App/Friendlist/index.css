@@ -1,0 +1,43 @@
+body {
+    background-image: url("woodDesktop.png");
+    background-size: cover;
+}
+    
+    
+.listParent {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    width: 40%;
+    border: 1px solid rgb(208, 193, 15);
+    margin: auto;
+    background-image: url("legalPad.png");
+    background-size: cover;
+    z-index: 20;
+    font-family: "Bradley Hand ITC","Comic Sans MS", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 9px;
+    font-weight: 900;
+}
+
+p {
+    line-height: .5em;
+}
+
+.friendName {
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 65px;
+    list-style: none;
+}
+
+.petsHeader {
+    font-weight: bold;
+}
