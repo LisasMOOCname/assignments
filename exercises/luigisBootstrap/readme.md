@@ -4,4 +4,4 @@ Use the Mario256 font and images in the given page.
 
 Skills: Bootstrap, CSS, HTML, static websites Level 2
 
-Status: The web page is done but still needs to be made responsive.
+Status: Assignment completed. Responsive without needing any column classes.

@@ -1,5 +1,4 @@
 body {
-
     color: red;
 	font-family: "SuperMario256", "Comic Relief", sans-serif;
 }
@@ -40,8 +39,7 @@ h2 {
 }	
 
 .footer {
-	padding: 4px 8px;
+	padding: 6px 15px;
 	background-color: rgb(255, 218, 9);
-	text-align: right;
 }
 
