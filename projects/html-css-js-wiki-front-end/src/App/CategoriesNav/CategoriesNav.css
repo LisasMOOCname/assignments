@@ -1,0 +1,19 @@
+.categoriesSection {
+    display: inline-block;
+    width: 20%;
+    padding: 25px 5px;
+    border: 2px solid rgb(84, 199, 118);
+    color: rgb(81, 124, 188);
+}
+
+.categoriesLink {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+}
+
+.subcategoriesLink {
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+}

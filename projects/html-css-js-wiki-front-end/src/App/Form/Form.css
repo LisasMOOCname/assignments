@@ -1,0 +1,41 @@
+.entryForm {
+    width: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 30px auto;
+}
+
+.entryFormColumnLeft {
+    width: 45%;
+}
+
+.entryFormColumnRight {
+    width: 45%;
+}
+
+.categoriesLabel {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.entryInput, .categories {
+    padding: 5px;
+    margin: 10px;
+    color: rgb(81, 81, 81);
+}
+
+.option {
+    border: 1px solid gray;
+}
+
+.largeInput {
+    width: 90%;
+    height: 80px;
+}
+
+.buttonRow {
+    text-align: center;
+}
+
+.entryButton {
+    margin: 10px;
+}

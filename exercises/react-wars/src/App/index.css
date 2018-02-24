@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    background-image: url("starWarsCharacters.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    font-family: "Starjedi.ttf", sans-serif;
+    font-size: 48px;
+    color: yellow;
+}
+
+.sidebarList {
+        width: 20%;
+}
+
+.mainPage {
+    width: 80%;
+}

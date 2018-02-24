@@ -1,31 +1,31 @@
 var box = document.getElementById("box");
 
-box.onmouseover = function(event) {
+box.onmouseover = function (event) {
     box.style.backgroundColor = "blue";
 }
 
-box.onmousedown = function(event) {
+box.onmousedown = function (event) {
     box.style.backgroundColor = "red";
 }
 
-box.onmouseup = function(event) {
+box.onmouseup = function (event) {
     box.style.backgroundColor = "yellow";
 }
 
-box.ondblclick = function(event) {
+box.ondblclick = function (event) {
     box.style.backgroundColor = "green";
 }
 
-window.onwheel = function(event) {
+window.onwheel = function (event) {
     box.style.backgroundColor = "orange";
 }
 
-window.onkeyup = function(event) {
-    switch(event.key) {
-        case "p": // this way works, the other way, below, doesn't - why??
-        case "P":
-            box.style.backgroundColor = "purple";
+window.onkeyup = function (event) {
+    switch (event.which) {
+        case 71:
+            box.style.backgroundColor = "green";
             break;
+
         case (event.which === 66):
         case (event.which === 98):
             box.style.backgroundColor = "blue";

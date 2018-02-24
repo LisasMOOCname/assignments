@@ -1,0 +1,12 @@
+.navbar {
+    padding: 15px;
+    background-color: rgb(255, 100, 70);
+    text-align: right;
+}
+
+.link {
+    padding-right: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+
+[{
+        "name": "Doctor Strange",
+        "catchphrase": "By the Seven Spheres!",
+        "filename": "doctorStrange.png"
+    },
+    {
+        "name": "Green Lantern",
+        "catchphrase": "In brightest day, in blackest night, no evil shall escape my sight",
+        "filename": "greenLantern.png"
+    },
+    {
+        "name": "Scarlet Witch",
+        "catchphrase": "No more mutants!",
+        "filename": "scarletWitch.png"
+    },
+    {
+        "name": "SquirrelGirl",
+        "catchphrase": "Let's get nuts!",
+        "filename": "squirrelGirl.png"
+    }
+]

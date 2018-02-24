@@ -1,0 +1,18 @@
+.footer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 21, 223);
+    color: silver;
+}
+
+h4 {
+    margin: 4px;
+}
+
+h5 {
+    margin: 2px;
+}

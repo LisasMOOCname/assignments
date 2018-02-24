@@ -1,8 +1,11 @@
 const express = require("express");
-const app = express();
-const bounties = require("./bounties");
+const bounties = require("./bountyDB.js");
 const bodyParser = require("body-parser");
 const uuid = require("uuid");
+
+const bountyRoute = require("./routes/bounties.js");
+
+const app = express();
 
 let port = 8080;
 
@@ -11,6 +14,7 @@ app.listen(port, () => {
 })
 
 app.use(bodyParser.json());
+app.use("/bounties", bountyRoute);
 
 
 app.get("/", (req, res) => {

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    align-items: center; /*This DOES NOT work. WHY NOT???? */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top {
+    width: 52%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(0, 0, 120);
+    color: rgb(250, 250, 250);
+}
+
+.badge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 52%;
+    padding: 20px;
+    border: 2px solid rgb(100, 100, 100);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.badgeField {
+    width: 40%;
+    margin: 8px;
+}
+
+
+.bigField {
+    width: 90%;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;    
+}

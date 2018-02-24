@@ -1,9 +1,10 @@
-import React, {Component} from "react";
+import React from "react";
+import ColorBox from "./ColorBox";
 
 function App(props) {
     return (
         <div>
-
+            <ColorBox />
         </div>
     )
 }

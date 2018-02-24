@@ -1,0 +1,4 @@
+.toDosSidebar {
+    display: flex;
+    flex-direction: column;
+}

@@ -5,6 +5,7 @@
 }
 
 body {
+	height: 100%;
     background-color: rgb(255, 255, 255);
 	font-family: Candara, Verdana, sans-serif;
 }
@@ -126,61 +127,79 @@ h2 {
 /* Services Page */
 
 #areasOfExpertise {
-	height: 400px;
 	background-color: rgb(255, 255, 255);
 }
 
 #expertise {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	text-align: center;
+	margin: 30px 120px 15px;
 }
 
 .industry {
-			display: flex;
-			flex-direction: column; 
-			width: 250px;
-	         height: 300px;
-			 padding: 15px;
-			 border: 1px solid black;
-			 margin:20px;
-			 overflow: hidden;
-			 justify-content: flex-end;
-			 align-items: center;
+	width: 250px;
+	height: 320px;
+	border: 2px solid rgb(40, 40, 40);
+	margin: 20px 20px 0 20px;
+	color: rgb(40, 40, 40);
+}
 
+.industry-top {
+			 height: 55%;
+			 padding-top: 15px;
+			 color: rgb(40, 40, 40);
+			 background-repeat: no-repeat;
 }	
 
+.industry-bottom {
+	width: 250px;
+	height: 45%;
+	padding: 10px;
+	margin: 0 20px 20px 20px;
+	color: rgb(40, 40, 40);
+
+}
+
+/*.innerDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8px;
+} */
+
 .industry p {
+	text-align: left;
 }
 	
+#medicine {
+	color: rgb(180, 180, 180);
+	text-shadow: 1px 1px rgb(40, 40, 40);
+}
 
 #left {
-    background-image: url("business.png");
-	background-repeat: no-repeat;
-	width: 250px;
+    background-image: url("laptopWithCode.png");
 }
 
 #middle {
     background-image: url("healthcare.png");
-	background-repeat: no-repeat;	
-	width: 250px;
 }
 
 #right {
     background-image: url("innovation.png");
-	background-repeat: no-repeat;
-	width: 250px;
 }
 
 /* Careers Page */
 
-.main {
-	display: flex;
-}
+/*.main {
+
+}*/
 
 .narrowMain {
-	width: 23%;
+    display: inline-block;
+	width: 24%;
 	padding: 25px;
+	border: 1px solid greenyellow;
 	border-right: 2px solid gray;
 	margin: 0;
 }
@@ -190,10 +209,21 @@ h4, .careersNav {
 }
 
 .wideMain {
+    display: inline-block;
 	width: 75%;
 	padding: 25px;
+	border: 1px solid orangered;
 	border-left: 2px solid gray;
 	margin: 0;
+}
+
+.jobSearch {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.search {
+	width: 275px;
 }
 
 form div {
@@ -201,10 +231,20 @@ form div {
 	padding: 8px;
 }
 
+.instructions {
+	font-weight: bold;
+}
+
+form {
+	text-align: center;
+}
+
 input {
 	padding: 3px;
 	margin: 5px;
 }
+
+/* About Page */
 
 .blurb {
 	width: 70%;
@@ -224,12 +264,6 @@ input {
 
 #values span {
      color: rgb(0, 0, 0);
-}
-
-.employee {
-	height: 220px;
-	padding: 20px;
-	margin-bottom: 20px;
 }
 
 .companyTeam {

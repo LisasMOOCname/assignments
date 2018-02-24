@@ -37,16 +37,31 @@
 		
 		<div class="wideMain">
 		    <div class="jobSearch">
-			    <label>Search for Jobs<input type="text" /></label>
+				<label>Search for Jobs<input class="search" type="text" /></label>
+				<button>Search</button>
 		    </div>
 			
 		    <form>
-			    <h3>Please complete the information below, and one of our recruiters will contact you within 48 business hours.</h3>
-		        <div><label>Email Address<input type="email" /></label></div>
-				<div><label>Phone Number<input type="text" /></label></div>
-				<div>I am interested in applying for or learning more about Job# <input type="number" /></div>
-				<div><label>Upload Your Resume<input type="textbox" /></label></div>
-				<div><input type="checkbox" />Please add me to your job openings email list.</div>
+			    <p class="instructions">Please complete the information below, and one of our recruiters will contact you within 48 business hours.</p>
+				<div id="inputGroup">
+				    <div>
+					<label>First Name<input type="text" /></label>
+					<label>Last Name<input type="text" /></label>
+				</div>
+		        <div>
+					<label>Email Address<input type="email" /></label>
+					<label>Phone Number<input type="text" /></label>
+				</div>
+				<div>
+					<label>Upload your resume<input type="file" id="resume" /></label>
+				</div>
+				<div>
+					<label>I am interested in applying for or learning more about Job# <input type="number" /></label>
+				</div>
+				<div>
+					<input type="checkbox" />Please add me to your job openings email list.
+				</div>
+				</div>
 				<button type="submit">Submit</button>
 		    </form>
 		</div>

@@ -1,10 +1,13 @@
-import React, {Component} from "react";
+import React from "react";
+import "./Footer.css";
 
-function Footer(props) {
+function Footer({brand, address, phone}) {
     return (
-        <footer>
-
-        </footer>
+        <div className="footer">
+            <h4>{brand}</h4>
+            <h5>{address}</h5>
+            <h5>{phone}</h5>
+        </div>
     )
 }
 

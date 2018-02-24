@@ -1,0 +1,16 @@
+header {
+    background-color: rgb(55, 128, 238);
+}
+
+.willie {
+    width: 120px;
+    border: 3px solid rgb(150, 150, 150);
+    border-radius: 50%;
+    margin: 25px;
+}
+
+h1 {
+    width: 50%;
+    padding-bottom: 25px;
+    text-align: center;
+}

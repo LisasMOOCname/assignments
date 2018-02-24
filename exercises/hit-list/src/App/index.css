@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+    font-family: Arial;
+    background-color: rgb(200, 200, 200);
+    color: rgb(70, 70, 70);
+}
+
+h1 {
+    display: inline-block;
+    width: 40%;
+    padding: 50px;
+    border-bottom: 2px solid rgb(70, 70, 70);
+    margin-bottom: 90px;
+}
+
+.hitImage {
+    width: 250px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.hitName {
+    margin-bottom: 50px;
+}

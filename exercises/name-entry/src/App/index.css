@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(0, 80, 10);
+    text-align: center;
+}
+
+form * {
+    margin: 25px auto;
+}
+
+.inputName {
+    display: block;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    border: 2px inset rgb(200, 208, 162);
+    background-color: rgb(249, 243, 221);
+    color: rgb(80, 80, 80);
+}
+
+.nameFormOutput {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 12px;
+    border: 2px groove rgb(200, 208, 162);
+    background-color: rgb(249, 243, 221);
+    color: rgb(1, 19, 121);
+    font-family: "Edwardian Script ITC", serif;
+}
+
+.nameFormBtn {
+    width: 70px;
+    height: 30px;
+    padding: 10px auto 20px;
+    border: 2px ridge rgb(208, 208, 162);
+    border-radius: 3px;
+    background-color: rgb(120, 0, 0);
+    font-family: "Edwardian Script ITC", serif;
+    font-size: 22px;
+    color: rgb(208, 208, 162);
+}
+
+h2 {
+    color: rgb(120, 0, 0);
+    font-family: "Edwardian Script ITC", serif;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.namesList {
+    width: 200px;
+    padding: 7px 25px;
+    border: 2px groove rgb(200, 208, 162);
+    margin: 20px auto;
+    background-color: rgb(249, 243, 221);
+    color: rgb(80, 80, 80);
+    font-family: "Edwardian Script ITC", serif;
+    font-size: 24px;
+}
+

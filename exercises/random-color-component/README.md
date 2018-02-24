@@ -2,4 +2,4 @@ Assignment: Create a component that uses axios to GET a random color from the ra
 
 Skills: React, Axios
 
-Set up app and components, the rest still to be done.
+Status: Completed.

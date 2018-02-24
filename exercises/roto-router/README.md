@@ -3,4 +3,4 @@ The website must contain a navbar, footer, and a main view section. The navbar m
 
 Skills: React-Router components (Link, Switch, Route)
 
-Status: Set up, the rest still to be done.
+Status: Assignment completed.

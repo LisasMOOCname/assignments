@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Septic Cleanup",
+        "price": 950,
+        "description": "Removing sewage"
+    },
+    {
+        "name": "Drain Unclogging",
+        "price": 500,
+        "description": "Use of snake and/or drain cleaner to clear your drain."
+    },
+    {
+        "name": "Pipe Replacement",
+        "price": 350,
+        "description": "Replacing broken pipes. Cost is per pipe; cost of pipe not included."
+    },
+    {
+        "name": "Toilet Installation",
+        "price": 250,
+        "description": "Hooking up toilet to clean outlets."
+    }
+]

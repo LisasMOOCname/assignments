@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(245, 0, 0);
+}
+
+.containerParent {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 30px;
+}
+h1 {
+    text-align: center;
+    padding-top: 35px;
+    /*margin: 30px;*/
+    font-family: "Showcard Gothic", sans-serif;
+    font-size: 48px;
+    font-style: italic;
+}
+.heroPic {
+    width: 250px;
+    border: 1px solid rgb(0, 20, 0);
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+    padding-top: 25px;
+    margin: 30px;
+    font-family: "Britannic Bold", sans-serif;
+    font-size: 26px;
+    font-style: italic;
+}
