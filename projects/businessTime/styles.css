@@ -5,12 +5,22 @@
 }
 
 body {
-	height: 100%;
     background-color: rgb(255, 255, 255);
 	font-family: Candara, Verdana, sans-serif;
 }
 
+.container {
+	height: 100%;
+	display: grid;
+	grid-template-areas: "h h h h h h h h h h h h"
+						 "m c c c c c c c c c c c"
+						 "f f f f f f f f f f f f";
+	grid-template-rows: 145px auto 170px;
+}
+
 header {
+	grid-area: h;
+	border-bottom: 1px solid rgb(130, 130, 130);
 	background-color: rgb(242, 242, 242);
 	}
 
@@ -20,7 +30,6 @@ header {
    }
    
 .headerNav { 
-   display: inline-block;
    float: right;
    text-align: right;
 }
@@ -34,8 +43,9 @@ header {
 }
 
 footer {
+	    grid-area: f;
 		padding: 20px;
-		border-top: 1px solid rgb(100, 100, 100);
+		border-top: 1px solid rgb(130, 130, 130);
 		background-color: rgb(220, 220,220);
 		color: rgb(100, 100, 100);
 		}
@@ -127,46 +137,34 @@ h2 {
 /* Services Page */
 
 #areasOfExpertise {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 10%;
 	background-color: rgb(255, 255, 255);
 }
 
-#expertise {
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-	margin: 30px 120px 15px;
-}
-
 .industry {
-	width: 250px;
-	height: 320px;
-	border: 2px solid rgb(40, 40, 40);
-	margin: 20px 20px 0 20px;
-	color: rgb(40, 40, 40);
-}
-
-.industry-top {
-			 height: 55%;
-			 padding-top: 15px;
+	         width: 250px;
+			 border: 1px solid rgb(100, 100, 100);
 			 color: rgb(40, 40, 40);
 			 background-repeat: no-repeat;
-}	
-
-.industry-bottom {
-	width: 250px;
-	height: 45%;
-	padding: 10px;
-	margin: 0 20px 20px 20px;
-	color: rgb(40, 40, 40);
-
+			 overflow: hidden;
 }
 
-/*.innerDiv {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 8px;
-} */
+.topPic  {
+	width: 250px;
+	height: 160px;
+}
+
+.industryHeader {
+	padding: 20px 3px;
+	text-align: center;
+}
+
+.innerDiv {
+	width: 250px;
+	padding: 15px 20px;
+}
 
 .industry p {
 	text-align: left;
@@ -191,57 +189,74 @@ h2 {
 
 /* Careers Page */
 
-/*.main {
-
-}*/
-
-.narrowMain {
-    display: inline-block;
-	width: 24%;
+.menu {
+    grid-area: m;
 	padding: 25px;
-	border: 1px solid greenyellow;
-	border-right: 2px solid gray;
-	margin: 0;
+	border-right: 1px solid gray;
 }
 
 h4, .careersNav {
 	margin: 4px;
 }
 
-.wideMain {
-    display: inline-block;
-	width: 75%;
-	padding: 25px;
-	border: 1px solid orangered;
-	border-left: 2px solid gray;
-	margin: 0;
+.content {
+    grid-area: c;
+	padding: 5px 25px 30px;
 }
 
 .jobSearch {
-	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
-.search {
+#search {
 	width: 275px;
-}
-
-form div {
-	display: block;
-	padding: 8px;
-}
-
-.instructions {
-	font-weight: bold;
+	padding: 3px;
+	margin: 5px;
 }
 
 form {
-	text-align: center;
+	height: 100%;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(12, auto);
+}
+
+.instructions {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.inp-left {
+	grid-column: 2/3;
+	text-align: right;
+}
+
+.inp-right {
+	grid-column: 3/4;
+	text-align: right;
 }
 
 input {
-	padding: 3px;
+	padding: 1px 3px;
 	margin: 5px;
+	text-align: left;
+}
+.options {
+	grid-column: 2 / 6;
+	padding-left: 35px;
+	margin-top: 12px;
+}
+.checkbox {
+	margin-left: 0;
+}
+
+button {
+	grid-column: 3 / 4;
+	width: 90px;
+	margin-top: 25px;
 }
 
 /* About Page */

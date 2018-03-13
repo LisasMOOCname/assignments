@@ -11,4 +11,4 @@ Assignment: Create a business website that includes these elements:
 
 Skills: Static wesbites Level 2, Project
 
-Work still in progress.
+Status: All content is there. Laptop-width CSS is done. Still need to make it responsive and to get the form submission to display the alert. (The JS isn't required for the project, but I should be able to do this by now.)

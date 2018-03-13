@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<div class="container">
     <header>
         <div id="logo">
             <a href="index.html"><img src="smallLogoCo2.png" alt="business logo" title="Business Logo" /></a>
@@ -24,8 +25,7 @@
         </nav>
     </header>
 	
-	<section class="main">
-        <nav class="narrowMain">
+    <nav class="menu">
 		    <h4>Working at Sable</h4>
             <ul>
 			    <li class="careersNav"><a href="#">Job Openings</a></li>
@@ -33,39 +33,28 @@
 				<li class="careersNav"><a href="#">Sable Perks</a></li>
 				<li class="careersNav"><a href="#">Professional Development</a></li>
 			</ul>
-		</nav>
+    </nav>
 		
-		<div class="wideMain">
+	<div class="content">
 		    <div class="jobSearch">
-				<label>Search for Jobs<input class="search" type="text" /></label>
-				<button>Search</button>
+				<label>Search for Jobs<input id="search" type="text" name="search" /></label>
+				<button id="findJobs">Find Jobs</button>
 		    </div>
 			
+			<p class="instructions">Please complete the information below, and one of our recruiters will contact you within 48 business hours.</p>
 		    <form>
-			    <p class="instructions">Please complete the information below, and one of our recruiters will contact you within 48 business hours.</p>
-				<div id="inputGroup">
-				    <div>
-					<label>First Name<input type="text" /></label>
-					<label>Last Name<input type="text" /></label>
-				</div>
-		        <div>
-					<label>Email Address<input type="email" /></label>
-					<label>Phone Number<input type="text" /></label>
-				</div>
-				<div>
-					<label>Upload your resume<input type="file" id="resume" /></label>
-				</div>
-				<div>
-					<label>I am interested in applying for or learning more about Job# <input type="number" /></label>
-				</div>
-				<div>
-					<input type="checkbox" />Please add me to your job openings email list.
-				</div>
-				</div>
-				<button type="submit">Submit</button>
+                <div class="inp-left"><label>First Name<input type="text" id="firstName" name="firstName" required /></label></div>
+				<div class="inp-right"><label>Last Name<input type="text" id="lastName" name="lastName" required /></label></div>
+				<div class="inp-left"><label>Email Address<input type="email" id="email" name="email" required /></label></div>
+				<div class="inp-right"><label>Phone Number<input type="number" id="phone" name="phone" /></label></div>
+                <div class="options">
+				    <div class="full-width"><label>Upload resume<input type="file" id="resume" name="resume" /></label></div>
+				    <div class="full-width"><label>I am applying for Job # <input type="number" id="jobNumber" name="jobNumber" /></label></div>
+				    <div class="full-width"><input class="checkbox" type="checkbox" id="emailList" name="emailList" />Please add me to your job openings email list.</div>
+                </div>
+                <button id="submitForm" type="submit">Submit</button>
 		    </form>
-		</div>
-	</section>
+	</div>
 	
     <footer>
 	<div id="footerDivContainer">
@@ -99,7 +88,9 @@
 		</div>
 		</div>
 		<br />
-		    <p id="copyright">&copy 2017 All rights reserved.</p>
-    </footer>
+			<p id="copyright">&copy 2017 All rights reserved.</p>
+	</footer>
+	</div> 
+<script src="businessTime.js"></script>
 </body>
 </html>
